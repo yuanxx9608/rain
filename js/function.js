@@ -1,29 +1,19 @@
-var temp = ["http://qianjires.xxoojoke.com/", "player_rain", "getElementById", 
-		"player_music", "btnPlay", "paused", 
-		"player_rain_source", "src", "rain/therain.m4a", 
-    "load", "player_music_source", "rain/In_Autumn_the_Leaves_Came_to_Our_House.mp3",
-    "volumn_rain", "volumn_music", "value", 
-    "play", "className", "",
-    "pause", "volume", 
-    "厅雨，只是一个简单的在线听雨声和钢琴的小站.", 
-		"钢琴来自大师 Fariborz Lachini 的 《 In Autumn, the Leaves Came to Our House 》", 
-		"这个音乐目前没有找到版权信息，我去各大音乐网站搜索，发现都有这首钢琴曲，如果真的侵权，我会立即更改的，感谢！", 
-		"个人联系方式： 3231921898@qq.com"];
-const host = "http://baidu.com";
-const rain = document.getElementById('player_rain');
-const music = document.getElementById('player_music');
-const playBtn = document.getElementById('btnPlay');
-let platFirst = true;
+var rain = document.getElementById('player_rain');
+var music = document.getElementById('player_music');
+var playBtn = document.getElementById('btnPlay');
+var platFirst = true;
+var rainarray=["rain.mp3"];
+var musicarray=["rain.mp3"];
 
 function playAudio() {
   if (rain.paused) {
     if (platFirst) {
       const sourceRain = document.getElementById('player_rain_source');
-      sourceRain.src = music/rain.mp3;
+      sourceRain.src = "music/rain.m4a";
       setVolume(1, 1);
       rain.load();
       const sourceMusic = document.getElementById("player_music_source");
-      sourceMusic.src = music.mp3;
+      sourceMusic.src = "music/music.mp3";
       setVolume(0.3, 2);
       music.load();
     } else {
@@ -70,6 +60,6 @@ function setVolume(volume, target) {
 // }
 
 function click_about() {
-  const about = "厅雨，只是一个简单的在线听雨声和钢琴的小站.钢琴来自大师 Fariborz Lachini 的 《 In Autumn, the Leaves Came to Our House 》,这个音乐目前没有找到版权信息，我去各大音乐网站搜索，发现都有这首钢琴曲，如果真的侵权，我会立即更改的，感谢！, 个人联系方式： 3231921898@qq.com";
+  const about = "听雨轩--简单的听雨声和钢琴的小站.钢琴来自大师Fariborz Lachini的《In Autumn,the Leaves Came to Our House》,如有侵权立删，感谢支持!email:3231921898@qq.com";
   alert(about);
 }
