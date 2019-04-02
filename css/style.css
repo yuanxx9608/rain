@@ -14,11 +14,11 @@ body {
 }
 
 .play {
-	background: url('../image/play.png');
+	background: url('../image/play.svg');
 }
 
 .pause {
-	background: url('../image/pause.png');
+	background: url('../image/pause.svg');
 }
 
 .volume_control {
