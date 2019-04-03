@@ -60,6 +60,6 @@ function setVolume(volume, target) {
 // }
 
 function click_about() {
-  const about = "听雨轩--简单的听雨声和钢琴的小站.钢琴来自大师Fariborz Lachini的《In Autumn,the Leaves Came to Our House》,如有侵权立删，感谢支持!email:3231921898@qq.com";
+  const about = "听雨轩--简单的听雨声和钢琴的小站，音乐如有侵权立删，感谢支持! e-mail:3231921898@qq.com";
   alert(about);
 }
